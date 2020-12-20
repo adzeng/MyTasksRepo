@@ -64,7 +64,7 @@
 		
 	</dependencies>
 
-	<build>
+	<build>			
 		<plugins>
 			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -76,6 +76,18 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
             </plugin>
+            <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                        <version>11</version>
+                        <vendor>openjdk</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 
