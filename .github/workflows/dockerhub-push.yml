@@ -55,5 +55,5 @@ jobs:
           mkdir -p target
           mv jar-artifact/* target/
 
-          docker build .f target/dockerfile -t adzeng/darbootcamp_app:latest .
+          docker build -f target/dockerfile -t adzeng/darbootcamp_app:latest .
           docker push adzeng/darbootcamp_app:latest
