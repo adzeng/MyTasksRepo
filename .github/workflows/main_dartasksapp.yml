@@ -18,7 +18,7 @@ jobs:
     - name: Set up Java version
       uses: actions/setup-java@v1
       with:
-        java-version: '8'
+        java-version: '11'
 
     - name: Build with Maven
       run: mvn clean install
@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'dartasksapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_64c82686413d4905b64b54a192a128ba }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f3cb25d9b5a04137b39cf393a69627ed }}
         package: '${{ github.workspace }}/target/*.jar'
