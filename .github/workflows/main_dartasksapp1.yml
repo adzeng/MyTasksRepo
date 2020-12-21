@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy WAR app to Azure Web App - dartasksapp1
+name: Build and deploy JAR app to Azure Web App - dartasksapp1
 
 on:
   push:
@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'dartasksapp1'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_24ef5ef7c0664674ad9959a6970821ac }}
-        package: '${{ github.workspace }}/target/*.war'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a5f91343750c4521ae19857dc68e6503 }}
+        package: '${{ github.workspace }}/target/*.jar'
