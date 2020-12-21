@@ -38,7 +38,7 @@ public class TaskController   {
 	}  
 	
 	@PostMapping("/task")  
-	private int saveBook(@RequestBody Task task)   
+	private int saveTask(@RequestBody Task task)   
 	{  
 		ts.saveUpdate(task);  
 		return task.getId();  
